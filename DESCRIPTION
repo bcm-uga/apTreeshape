@@ -7,7 +7,7 @@ Author: Nicolas Bortolussi, Eric Durand, Michael Blum
         <olivier.francois@imag.fr>
 Maintainer: Michael Blum <michael.blum@imag.fr>
 Depends: R (>= 2.0.0), ape
-Imports: quantreg
+Imports: quantreg, cubature, coda, pbapply
 Description: apTreeshape is mainly dedicated to simulation and analysis
         of phylogenetic tree topologies using statistical indices. It
         is a companion library of the 'ape' package. It provides

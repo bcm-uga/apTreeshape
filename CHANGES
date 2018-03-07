@@ -1,3 +1,10 @@
+Changes in apTreeshape 1.4.5
+============================
+
+  o Add simulation and inference function for the ranked tree shape model by Malie, Gascuel & Lambert
+
+
+
 Changes in apTreeshape 1.4.4
 ============================
 

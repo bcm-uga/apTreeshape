@@ -41,7 +41,8 @@ Olivier Francois \email{olivier.francois@imag.fr}
  data(bird.families)
  tree.birds <- as.treeshape(bird.families, model = "yule")
  class(tree.birds) <- "treeshape"
- pv <- sapply(1:135, FUN = function(i) shift.test(tree.birds, i, lambda1 = 1, lambda2 = 100, nrep = 1000, silent = TRUE))
+ pv <- sapply(1:135, FUN = function(i) shift.test(tree.birds, i, lambda1 = 1, 
+                                      lambda2 = 100, nrep = 1000, silent = TRUE))
 
 	## Significant shifts detected at nodes = 67 and 78	
  pv[c(67,78)]
