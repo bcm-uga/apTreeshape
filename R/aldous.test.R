@@ -1,3 +1,4 @@
+#comment
 "aldous.test" <-
 function (tree, xmin = 20, ...)
 {
