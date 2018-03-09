@@ -1,10 +1,10 @@
 \name{bind.trees}
 \alias{bind.trees}
 \title{
-Internal BetaAlphaEta function
+Binds two tree together
 }
 \description{
-Binds to tree together
+Binds two tree together
 }
 \usage{
 bind.trees(a1, a2, root1, root2, ab = FALSE)

@@ -69,6 +69,14 @@ Shape of the proposal. Can be "bactrian" (the default, ref), "uniform", or "norm
 Optimal acceptance value (default to 0.3)
 }
 }
+\details{
+Returns a list with a mcmc field contening the resulting chain, and other fields that are used to resume runing the inference if the chain has to be completed. 
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
+}
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert
 }
@@ -85,20 +93,17 @@ plot.phylo(tree, show.node.label=TRUE,
             ((tree$Nnode+1)/6), adj=0.1)
 
 \dontrun{
-niter=1000
-
-
-chain=mcmc_eta(tree,epsilon=0.001,beta=beta,V = c(0.1,0.1),niter=niter,ini=c(0,1),
-                 verbose = 50,silent = FALSE,Nadapt = 200,NadaptMin = 200)
+chain=mcmc_eta(tree,epsilon=0.001,beta=beta,V = c(0.1,0.1),niter=600,ini=c(0,1),
+                 verbose = 100,silent = FALSE,Nadapt = 100,NadaptMin = 100)
 # The initialisation of the mcmc is quiet long because 
 # we begin by drawing many unsampled intervals. 
 # When this is done it gets quicker. 
 
 
-chain=mcmc_eta(tree,epsilon=0.001,beta=beta,niter=4000,verbose = 200,silent = FALSE,
-                 chain = chain,Nadapt = 500,NadaptMin = 500,NadaptMax = 2000)
+chain=mcmc_eta(tree,epsilon=0.001,beta=beta,niter=400,verbose = 200,silent = FALSE,
+                 chain = chain,Nadapt = 100,NadaptMin = 100,NadaptMax = 700)
 
-thinned=mcmc(chain$mcmc[seq(1000,5000,10),])
+thinned=mcmc(chain$mcmc[seq(200,1000,10),])
 plot(thinned)
 da=density(thinned[,"alpha"])
 MPa=da$x[which.max(da$y)]

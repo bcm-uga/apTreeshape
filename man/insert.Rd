@@ -2,10 +2,11 @@
 \alias{insert}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Insert an element in a vector
 }
 \description{
-Insert an element in a vector}
+Insert an element in a vector
+}
 \usage{
 insert(v, e, i, replace)
 }

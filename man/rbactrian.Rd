@@ -2,7 +2,7 @@
 \alias{rbactrian}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Proposal for the mcmc functions
 }
 \description{
 Proposal for the mcmc functions

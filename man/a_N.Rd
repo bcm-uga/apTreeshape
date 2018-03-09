@@ -5,7 +5,7 @@
 Computes a_n
 }
 \description{
-Values of a_n for n in 1:N (see appendix 1)
+Values of a_n for n in 1:N
 }
 \usage{
 a_N(beta, N)
@@ -18,6 +18,14 @@ Imbalance index
   \item{N}{
 Tip number
 }
+}
+\details{
+a_n = ∫_(0,1) (1-r^n-(1-r)^n) r^β (1-r)^β dr
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
 }
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert

@@ -2,10 +2,10 @@
 \alias{simulate.R.K}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Simulate (R,K)
 }
 \description{
-Simulate interval split together with the number of tips in each resulting subinterval (see appendix 1)
+Simulate a split and the number of marks in each resulting subintervals
 }
 \usage{
 simulate.R.K(beta, n)
@@ -18,6 +18,11 @@ Imbalance index
   \item{n}{
 Tip number in the parent clade
 }
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
 }
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert

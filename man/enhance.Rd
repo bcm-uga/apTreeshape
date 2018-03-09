@@ -2,7 +2,7 @@
 \alias{enhance}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Internal function
 }
 \description{
 Enhance the data by drawing intevals at nodes

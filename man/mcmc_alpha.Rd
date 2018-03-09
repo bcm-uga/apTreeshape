@@ -66,6 +66,14 @@ Optimal acceptance value (default to 0.3)
 Minimal scaling value for the mcmc proposal (default to 0.001)
 }
 }
+\details{
+Returns a list with a mcmc field contening the resulting chain, and other fields that are used to resume runing the inference if the chain has to be completed. 
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
+}
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert
 }
@@ -79,14 +87,14 @@ plot(tree)
 niter=1000
 
 \dontrun{
-chain=mcmc_alpha(tree,epsilon=0.01,beta=beta,niter=1000,V = c(0.1),ini=c(0),
-                 verbose = 100,silent = FALSE,Nadapt = 200,NadaptMin = 200)
+chain=mcmc_alpha(tree,epsilon=0.01,beta=beta,niter=600,V = c(0.1),ini=c(0),
+                 verbose = 100,silent = FALSE,Nadapt = 100,NadaptMin = 100)
   
 # Continue the same chain
-chain=mcmc_alpha(tree,epsilon=0.01,beta=beta,niter=4000,verbose = 500,silent = FALSE,
-                 chain = chain,Nadapt = 500,NadaptMin = 500,NadaptMax = 2000)
+chain=mcmc_alpha(tree,epsilon=0.01,beta=beta,niter=400,verbose = 100,silent = FALSE,
+                 chain = chain,Nadapt = 100,NadaptMin = 500,NadaptMax = 700)
   
-thinned=mcmc(chain$mcmc[seq(1000,5000,10),])
+thinned=mcmc(chain$mcmc[seq(200,1000,10),])
 plot(thinned)
 da=density(thinned[,"alpha"])
 MPa=da$x[which.max(da$y)]

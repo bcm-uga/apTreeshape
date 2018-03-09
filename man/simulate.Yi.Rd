@@ -2,10 +2,10 @@
 \alias{simulate.Yi}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Simulates the random variables Y_i
 }
 \description{
-Simulates the random variables Y_i (see online appendix)
+Simulates the random variables Y_i
 }
 \usage{
 simulate.Yi(N, epsilon, beta, n)
@@ -24,6 +24,14 @@ Imbalance index
   \item{n}{
 Number of marks in the interval
 }
+}
+\details{
+(Y_i) are independant random variables with density 2/(λ_ε) exp(-(β+n+1)x) (1-exp(-x))^β
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
 }
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert

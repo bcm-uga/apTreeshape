@@ -44,6 +44,11 @@ Clade abundance-richness index (if equal.ab == FALSE)
 Optional, vector of lambda_epsilon returned by the function lambda_N. If set to NULL (the default) it will be computed inside the function
 }
 }
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
+}
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert
 }

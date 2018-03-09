@@ -1,7 +1,7 @@
 \name{change_int_eta}
 \alias{change_int_eta}
 \title{
-Internal BetaAlphaEta function
+Internal function
 }
 \description{
 An auxiliary function used in mcmc_eta

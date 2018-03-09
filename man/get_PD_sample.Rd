@@ -46,6 +46,14 @@ Birth rate (if lengths == "yule")
 Death rate (if lengths == "yule")
 }
 }
+\details{
+A table of size length(sample.fract)*ntree. The element in ligne i and column j is the remaining Phylogenetic Diversity fraction for the j^th tree in wich a fraction sample.frac[i] has been sampled.  
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
+}
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert
 }

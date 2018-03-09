@@ -2,7 +2,7 @@
 \alias{split}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Computes the splits at each node of a tree
 }
 \description{
 Computes the splits at each node of a tree
@@ -13,7 +13,7 @@ split(tree)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{tree}{
-%%     ~~Describe \code{tree} here~~
+A phylo object
 }
 }
 \author{

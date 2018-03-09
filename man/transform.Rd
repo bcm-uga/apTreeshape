@@ -2,10 +2,10 @@
 \alias{transform}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Internal function
 }
 \description{
-Write the tree in another form, used in the mcmc function
+Write the tree in another form, used in the mcmc_alpha function
 }
 \usage{
 transform(tree, unsampled, list_depth = NULL, change_depth = 0)

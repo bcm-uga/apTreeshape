@@ -2,7 +2,7 @@
 \alias{change_int}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Internal function
 }
 \description{
 An auxiliary function used in mcmc_alpha

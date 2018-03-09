@@ -2,7 +2,7 @@
 \alias{depth}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Gets the node depths of the tree
 }
 \description{
 Gives the node depths of the tree, in the order of node labels 

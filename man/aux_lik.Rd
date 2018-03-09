@@ -2,7 +2,7 @@
 \alias{aux_lik}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Probability of the sampled node position
 }
 \description{
 Probability of the sampled node position knowing the tree topology, the number of unsampled nodes and the interval sizes
@@ -13,13 +13,13 @@ aux_lik(M, beta, alpha)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{M}{
-%%     ~~Describe \code{M} here~~
+An oject returned by the function transform
 }
   \item{beta}{
-%%     ~~Describe \code{beta} here~~
+Imbalance index
 }
   \item{alpha}{
-%%     ~~Describe \code{alpha} here~~
+Clade age-richness index
 }
 }
 \author{

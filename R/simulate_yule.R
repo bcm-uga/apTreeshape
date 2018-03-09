@@ -19,10 +19,6 @@ yule_lengths=function(N,b,d,tmax){
   return(X[2:N])
 }
 
-yule=function(N,b,d,tmax){
-  build_tree(yule_lengths(N,b,d,tmax))
-}
-
 simulate_yule=function(epsilon,alpha,beta,N,b,d,tmax=Inf,equal.ab=TRUE,eta=1,lambda=NULL){
   tree=simulate_tree(epsilon,alpha,beta,N,equal.ab,eta,lambda=lambda)
   ab=tree$tip.ab

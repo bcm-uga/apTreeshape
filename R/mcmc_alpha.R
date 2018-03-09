@@ -297,7 +297,7 @@ mcmc_alpha=function(tree,epsilon,beta,niter,ini=0,V=0.1,chain=NULL,
   tree$edge.length=tree2$edge.length
   N=tree$Nnode
   lambdaN=lambda_N(epsilon,beta,N+1)
-  aN=a_N(epsilon,beta,N+1)
+  aN=a_N(beta,N+1)
   ntip=tree$Nnode+1
   ordre=rank(max(depth(tree))+1-depth(tree))
   X=rep(1,ntip-1)

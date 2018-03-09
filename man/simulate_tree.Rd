@@ -5,7 +5,7 @@
 Simulates ranked topology 
 }
 \description{
-Simulates a ranked topology with tip abundance data from our model
+Simulates a ranked topology with tip abundance data from the beta alpha eta model
 }
 \usage{
 simulate_tree(epsilon, alpha, beta, N, equal.ab = TRUE, eta = 1, lambda = NULL)
@@ -35,7 +35,14 @@ Optional, vector of lambda_epsilon returned by the function lambda_N. If set to 
 }
 }
 \value{
-A phylo object with ranked shape drawn from our model. Branch lengths are so that node depths are in 1:(n-1)
+A phylo object with ranked shape drawn from our model, with an additional tip.ab field. 
+
+Branch lengths are so that node depths are in 1:(n-1)
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
 }
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert

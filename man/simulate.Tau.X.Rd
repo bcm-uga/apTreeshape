@@ -2,10 +2,10 @@
 \alias{simulate.Tau.X}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Internal BetaAlphaEta function
+Simulate (Tau, X_Tau-)
 }
 \description{
-Simulates the time before the splitting of the marks into two different fragments, and the size of the fragment at this time (see appendix 1).}
+Simulates the time before the splitting of the marks into two different fragments, and the size of the fragment at this time.}
 \usage{
 simulate.Tau.X(epsilon, x, alpha, beta, n, ab = FALSE, eta = 1, x.ab = 1, lambda = NULL)
 }
@@ -38,6 +38,11 @@ Initial abundance
   \item{lambda}{
 Optional, vector of lambda_epsilon returned by the function lambda_N. If set to NULL (the default) it will be computed inside the function
 }
+}
+\references{
+Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
+extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 
+doi: https://doi.org/10.1101/224295 
 }
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert

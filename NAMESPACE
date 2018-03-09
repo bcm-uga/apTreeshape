@@ -53,3 +53,11 @@ import(
   pbapply,
   quantreg
 )
+
+importFrom("stats", "as.dendrogram", "coefficients", "dbinom", "dist",
+             "ecdf", "hclust", "optimize", "pnorm", "quantile", "rbeta",
+             "rexp", "rnorm", "rpois", "runif", "sigma", "uniroot",
+             "var")
+
+importFrom("graphics", "abline", "layout", "par", "plot", "text")
+

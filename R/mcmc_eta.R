@@ -303,7 +303,7 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
   
   N=tree$Nnode
   lambdaN=lambda_N(epsilon,beta,N+1)
-  aN=a_N(epsilon,beta,N+1)
+  aN=a_N(beta,N+1)
   sign=FALSE
   
   proba.int=function(eta,enhanced){
