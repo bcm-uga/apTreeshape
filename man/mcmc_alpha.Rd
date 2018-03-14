@@ -82,7 +82,7 @@ Odile Maliet, Fanny Gascuel & Amaury Lambert
 ntip=30
 set.seed(123)
 tree=simulate_tree(epsilon = 0.01,alpha = -1,beta = 0,N = ntip,equal.ab = TRUE)
-beta=apTreeshape::maxlik.betasplit(tree,up=10)$max_lik
+beta=maxlik.betasplit(tree,up=10)$max_lik
 plot(tree)
   
 niter=1000
