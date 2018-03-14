@@ -46,7 +46,7 @@ Birth rate (if lengths == "yule")
 Death rate (if lengths == "yule")
 }
 }
-\details{
+\value{
 A table of size length(sample.fract)*ntree. The element in ligne i and column j is the remaining Phylogenetic Diversity fraction for the j^th tree in wich a fraction sample.frac[i] has been sampled.  
 }
 \references{

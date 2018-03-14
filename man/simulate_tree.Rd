@@ -35,7 +35,7 @@ Optional, vector of lambda_epsilon returned by the function lambda_N. If set to 
 }
 }
 \value{
-A phylo object with ranked shape drawn from our model, with an additional tip.ab field. 
+A phylo object with ranked shape drawn from our model, with an additional tip.ab field containing a vector of tip abundances. 
 
 Branch lengths are so that node depths are in 1:(n-1)
 }

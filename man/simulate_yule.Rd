@@ -44,6 +44,9 @@ Clade abundance-richness index (if equal.ab == FALSE)
 Optional, vector of lambda_epsilon returned by the function lambda_N. If set to NULL (the default) it will be computed inside the function
 }
 }
+\value{
+A phylo object with ranked shape drawn from our model, with an additional tip.ab field containing a vector of tip abundances. 
+}
 \references{
 Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
 extinctions and the loss of phylogenetic diversity}, bioRxiv 224295, 

@@ -19,6 +19,9 @@ Imbalance index
 Tip number
 }
 }
+\value{
+A vector of a_n for n in 1:N
+}
 \details{
 a_n = ∫_(0,1) (1-r^n-(1-r)^n) r^β (1-r)^β dr
 }

@@ -66,8 +66,9 @@ Optimal acceptance value (default to 0.3)
 Minimal scaling value for the mcmc proposal (default to 0.001)
 }
 }
-\details{
-Returns a list with a mcmc field contening the resulting chain, and other fields that are used to resume runing the inference if the chain has to be completed. 
+\value{
+A list with a mcmc field contening the resulting chain. 
+The other fields are only used to resume runing the inference if the chain has to be completed. 
 }
 \references{
 Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
