@@ -35,7 +35,7 @@ Fill, J. A. (1996), On the Distribution of Binary Search Trees under the Random 
 Michael Blum <\email{michael.blum@imag.fr}> \cr
 Nicolas Bortolussi <\email{nicolas.bortolussi@imag.fr}> \cr
 Eric Durand <\email{eric.durand@imag.fr}> \cr
-Olivier François <\email{olivier.francois@imag.fr}> 
+Olivier Fran?ois <\email{olivier.francois@imag.fr}> 
 }
 
 \examples{
@@ -50,9 +50,9 @@ likelihood.test(tree,  model = "pda", alternative = "two.sided")
 ## Histogram of shape statistics for a list of Yule trees 
 ##      (may take some time to compute)
 main="Histogram of shape statistics"; xlab="shape statistic"	
-hist(sapply(rtreeshape(1000,tip.number=100,model="yule"),FUN=shape.statistic,
+hist(sapply(rtreeshape(100,tip.number=50,model="yule"),FUN=shape.statistic,
       norm="yule"), freq=FALSE, main=main, xlab=xlab)
-
+#Increase the numner of trees >100 for a better fit
 ## Does it fit the Gaussian distribution with mean=0 and sd=1 ?
 x<-seq(-3,3,by=0.001)
 lines(x,dnorm(x))

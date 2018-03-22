@@ -1,4 +1,3 @@
-# Default NAMESPACE created by R
 # Remove the previous line if you edit this file
 
 # Export all names
@@ -25,7 +24,6 @@ export(aldous.test,
        plot.treeshape,
        raldous,
        rbiased,
-       read.tree2,
        rpda,
        rtreeshape,ryule,
        sackin,
@@ -44,6 +42,20 @@ export(aldous.test,
        treebalance,
        treeshape
        )
+
+S3method(all.equal, treeshape)
+S3method(as.phylo, treeshape)
+S3method(as.treeshape, phylo)
+S3method(is.binary, phylo)
+S3method(plot, treeshape)
+S3method(summary, treeshape)
+S3method(as.treeshape, treebalance)
+
+
+
+
+
+
 
 # Import all packages listed as Imports or Depends
 import(

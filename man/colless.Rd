@@ -52,11 +52,11 @@ colless(tpda[[1]],norm="pda")
 ## Histogram of Colless' indices for randomly generated Yule trees
 main="Colless' indices for randomly generated Yule trees"
 xlab="Colless' indices"
-hist(sapply(rtreeshape(300,tip.number=50,model="yule"),FUN=colless,norm="yule"),
+hist(sapply(rtreeshape(50,tip.number=50,model="yule"),FUN=colless,norm="yule"),
       freq=FALSE,main=main,xlab=xlab)
   
 ## Change the number of tips
-hist(sapply(rtreeshape(300,tip.number=100,model="yule"),FUN=colless,norm="yule"),
+hist(sapply(rtreeshape(50,tip.number=25,model="yule"),FUN=colless,norm="yule"),
       freq=FALSE,main=main,xlab=xlab)
 
 }
