@@ -61,10 +61,10 @@ Odile Maliet, Fanny Gascuel & Amaury Lambert
 set.seed(813)
 sampl.frac=seq(0,1,by=0.05) 
 
-PD = get_PD_sample(epsilon=0.01,beta=0,alpha=0,N=60,
+PD = get_PD_sample(epsilon=0.01,beta=0,alpha=0,N=50,
                 sampl.frac=sampl.frac,ntree=10,equal.ab=FALSE,
                 eta=0.5,lengths="yule",b=1,d=0)
-probs = c(0.025, 0.975, 0.5)  
+probs = c(0.1, 0.9, 0.5)  
 PD_stats = as.vector(t(sapply(1:nrow(PD), function(i){quantile(PD[i,], probs)}))) 
 par(mgp=c(2.2, 0.8, 0))
 par(mar=c(4, 4, 1, 1))

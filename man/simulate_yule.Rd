@@ -63,6 +63,6 @@ tree=simulate_yule(epsilon=0.001,alpha=-1,beta=-1,
 
 # Plot the tree with dots at tips that have sizes scaling with log abundance
 tree$tip.label = rep(".", length(tree$tip.label))
-ape::plot.phylo(tree, show.node.label=TRUE, 
+plot.phylo(tree, show.node.label=TRUE, 
           cex=(log(tree$tip.ab)-min(log(tree$tip.ab)-0.1))*6/diff(range(log(tree$tip.ab))), adj=0.1)
 }% __ONLY ONE__ keyword per line
