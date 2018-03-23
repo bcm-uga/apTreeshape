@@ -304,8 +304,7 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
   N=tree$Nnode
   lambdaN=lambda_N(epsilon,beta,N+1)
   aN=a_N(beta,N+1)
-  sign=FALSE
-  
+
   proba.int=function(eta,enhanced){
     p=0
     if(any(enhanced$Rs)==-Inf){return(-Inf)}
@@ -378,14 +377,14 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
     a=ini[1]
     e=ini[2]
     j=1
-    post_actuel=-Inf
+    post_actual=-Inf
     int=enhance_eta(tree,a,beta,e,epsilon,lambdaN = lambdaN, aN=aN, uns=uns)
-    post_actuel=posterior(a,e,int)
-    while(post_actuel==-Inf){
+    post_actual=posterior(a,e,int)
+    while(post_actual==-Inf){
       int=enhance_eta(tree,a,beta,e,epsilon,lambdaN = lambdaN, aN=aN, uns=uns)
-      post_actuel=posterior(a,e,int)
+      post_actual=posterior(a,e,int)
     }
-    Mcmc=c(a,e,sum(int$unsampled[(N+2):(2*N+1)]),post_actuel)
+    Mcmc=c(a,e,sum(int$unsampled[(N+2):(2*N+1)]),post_actual)
   }else{
     uns=chain$uns
     a=chain$a
@@ -394,7 +393,7 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
     Mcmc=chain$mcmc
     j=nrow(chain$mcmc)
     V=chain$V
-    post_actuel=chain$post_actuel
+    post_actual=chain$post_actual
   }
   n=0
   for(i in 1:niter){
@@ -458,7 +457,7 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
       post_new_int=posterior(a,e,new_int)
       if(post_new_int>-Inf){
         int=new_int
-        post_actuel=post_new_int
+        post_actual=post_new_int
       }else{print("infinite")}
     }
     
@@ -470,14 +469,14 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
       
     }
     
-    if(post>=post_actuel){
+    if(post>=post_actual){
       a=new_a
-      post_actuel=post
+      post_actual=post
     }else{
       u=runif(1,0,1)
-      if (log(u)<(post-post_actuel)){
+      if (log(u)<(post-post_actual)){
         a=new_a
-        post_actuel=post
+        post_actual=post
       }
     }
     
@@ -487,20 +486,20 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
       new_int=change_int_eta(int,NULL,tree,a,beta,new_e,epsilon,lambdaN = lambdaN, aN=aN, change=FALSE, uns=uns)
       post=posterior(a,new_e,new_int)
     }
-    if(post>=post_actuel){
+    if(post>=post_actual){
       e=new_e
       int=new_int
-      post_actuel=post
+      post_actual=post
     }else{
       u=runif(1,0,1)
-      if (log(u)<(post-post_actuel)){
+      if (log(u)<(post-post_actual)){
         e=new_e
         int=new_int
-        post_actuel=post
+        post_actual=post
       }
     }
     
-    Mcmc=rbind(Mcmc,c(a,e,sum(int$unsampled[(N+2):(2*N+1)]),post_actuel))
+    Mcmc=rbind(Mcmc,c(a,e,sum(int$unsampled[(N+2):(2*N+1)]),post_actual))
     
     n=n+1
     if(!silent){if(n==verbose){
@@ -509,7 +508,7 @@ mcmc_eta=function(tree,epsilon,beta,ini=c(0,1),V=c(0.1,0.1),chain=NULL,
     }}
   }
   colnames(Mcmc)=c("alpha","eta","nUnsampledled","log_post")
-  return(list(mcmc=mcmc(Mcmc),post_actuel=post_actuel,a=a,int=int,tree=tree,V=V,e=e,uns=uns))
+  return(list(mcmc=mcmc(Mcmc),post_actual=post_actual,a=a,int=int,tree=tree,V=V,e=e,uns=uns))
 }
 
 

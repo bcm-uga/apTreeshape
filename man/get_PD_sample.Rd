@@ -59,10 +59,10 @@ Odile Maliet, Fanny Gascuel & Amaury Lambert
 }
 \examples{
 set.seed(813)
-sampl.frac=seq(0,1,by=0.01) 
+sampl.frac=seq(0,1,by=0.05) 
 
-PD = get_PD_sample(epsilon=0.01,beta=0,alpha=0,N=100,
-                sampl.frac=sampl.frac,ntree=100,equal.ab=FALSE,
+PD = get_PD_sample(epsilon=0.01,beta=0,alpha=0,N=60,
+                sampl.frac=sampl.frac,ntree=10,equal.ab=FALSE,
                 eta=0.5,lengths="yule",b=1,d=0)
 probs = c(0.025, 0.975, 0.5)  
 PD_stats = as.vector(t(sapply(1:nrow(PD), function(i){quantile(PD[i,], probs)}))) 
