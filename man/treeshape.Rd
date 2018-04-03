@@ -32,7 +32,7 @@ Semple, C. and Steel, M. (2003) Phylogenetics. \emph{Oxford Lecture Series In Ma
 Michael Blum <\email{michael.blum@imag.fr}> \cr
 Nicolas Bortolussi <\email{nicolas.bortolussi@imag.fr}> \cr
 Eric Durand <\email{eric.durand@imag.fr}> \cr
-Olivier François <\email{olivier.francois@imag.fr}> \cr
+Olivier Francois <\email{olivier.francois@imag.fr}> \cr
 }
 
 \seealso{

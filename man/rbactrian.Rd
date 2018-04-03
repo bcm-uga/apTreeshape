@@ -23,5 +23,4 @@ rbactrian(n, m = 0.95)
 Odile Maliet, Fanny Gascuel & Amaury Lambert
 }
 \references{
-Yang, Z., & Rodríguez, C. E. (2013). Searching for efficient Markov chain Monte Carlo proposal kernels. Proceedings of the National Academy of Sciences, 110(48), 19307-19312.
-}
+Yang, Ziheng, and Carlos E. Rodriguez. "Searching for efficient Markov chain Monte Carlo proposal kernels. Proceedings of the National Academy of Sciences 110.48 (2013): 19307-19312.}

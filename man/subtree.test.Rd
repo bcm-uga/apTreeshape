@@ -29,7 +29,7 @@ A list containing the following arguments :
 }
 
 \references{
-Blum, M. and François, O. (2005) Minimal clade size and external branch length under the neutral coalescent \emph{Advances in Applied Probability} (2005), \bold{37.3}. 
+Blum, Michael GB, and Olivier Francois. Minimal clade size and external branch length under the neutral coalescent. Advances in Applied Probability 37.3 (2005): 647-662.
 }
 
 \author{ 

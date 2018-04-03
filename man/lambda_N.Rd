@@ -26,7 +26,7 @@ Upper bound from the integral (see lambda_n expression, default to 10000)
 }
 }
 \details{
-λ_ε = 2 ∫_(ε,∞) exp(-(β+n+1)x)(1-exp(-x))^β dx
+\eqn{\lambda_\epsilon = 2 \int_(\epsilon,\infty) exp(-(\beta+n+1)x)(1-exp(-x))^\beta dx}
 }
 \references{
 Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 

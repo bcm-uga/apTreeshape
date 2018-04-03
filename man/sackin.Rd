@@ -33,7 +33,7 @@ Blum, M., Francois, O. and Janson, S. The mean, variance and limiting distributi
 Michael Blum <\email{michael.blum@imag.fr}> \cr 
 Nicolas Bortolussi <\email{nicolas.bortolussi@imag.fr}> \cr
 Eric Durand <\email{eric.durand@imag.fr}> \cr
-Olivier François <\email{olivier.francois@imag.fr}>
+Olivier Francois <\email{olivier.francois@imag.fr}>
 }
 
 \seealso{

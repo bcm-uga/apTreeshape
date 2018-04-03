@@ -25,9 +25,7 @@ Death rate
 Maximum age of the root
 }
 }
-\references{
-Lambert, A., & Stadler, T. (2013). \emph{Birth–death models and coalescent point processes: The shape and probability of reconstructed phylogenies.} Theoretical population biology, 90, 113-128.
-}
+\references{Lambert, Amaury, and Tanja Stadler. Birth-death models and coalescent point processes: The shape and probability of reconstructed phylogenies. Theoretical population biology 90 (2013): 113-128.}
 \author{
 Odile Maliet, Fanny Gascuel & Amaury Lambert
 }

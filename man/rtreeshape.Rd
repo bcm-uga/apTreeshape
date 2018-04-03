@@ -50,7 +50,7 @@ Kirkpatrick, M. and Slatkin, M. (1993) Searching for evolutionary patterns in th
 Michael Blum <\email{michael.blum@imag.fr}>\cr 
 Nicolas Bortolussi <\email{nicolas.bortolussi@imag.fr}>\cr
 Eric Durand <\email{eric.durand@imag.fr}>\cr
-Olivier Fran�ois <\email{olivier.francois@imag.fr}>
+Olivier Francois <\email{olivier.francois@imag.fr}>
 }
 
 \examples{

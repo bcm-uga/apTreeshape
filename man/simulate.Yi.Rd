@@ -26,7 +26,7 @@ Number of marks in the interval
 }
 }
 \details{
-(Y_i) are independant random variables with density 2/(λ_ε) exp(-(β+n+1)x) (1-exp(-x))^β
+\eqn{(Y_i)} are independant random variables with density \eqn{2/(\lambda_\epsilon) exp(-(\beta+n+1)x) (1-exp(-x))^\beta}
 }
 \references{
 Maliet O., Gascuel F., Lambert A. (2018) \emph{Ranked tree shapes, non-random 
