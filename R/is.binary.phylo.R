@@ -1,7 +1,7 @@
 "is.binary.phylo" <-
 function(phy) {
 	
-	if (class(phy)!='phylo') {
+  if (!is(phy, "phylo")) {
 		stop("invalid arguments")
 	}
 		
